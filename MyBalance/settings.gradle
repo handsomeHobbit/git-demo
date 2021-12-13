@@ -1,2 +1,2 @@
-include ':app'
-rootProject.name = "MyBalance"
+include ':app', ':app'
+rootProject.name='My Application'
