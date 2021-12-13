@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#568492"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/advance"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/txt_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回登录"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"/>
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/et_register_account"
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/border_input_box"
+        android:hint="请输入账号（手机号）"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_register_password"
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/border_input_box"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/et_again_password"
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/border_input_box"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/color_input_box"
+        android:text="立即注册"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
