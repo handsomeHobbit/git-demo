@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@drawable/green_bg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#ecb42b"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="商品列表"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fdfcea"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:background="#00f0f1ec">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/txt_fruit_name"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="65dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/color_input_box"
+                android:gravity="center"
+                android:text="水果名称"
+                android:textColor="#3e3d3b"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txt_fruit_price"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/color_input_box"
+                android:gravity="center"
+                android:text="水果价格"
+                android:textColor="#3e3d3b"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/home_input_box"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txt_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center_horizontal"
+                        android:text="水果清单"
+                        android:paddingTop="30dp"
+                        android:textColor="#3e3d3b"
+                        android:textSize="30sp" />
+                    <TextView
+                        android:id="@+id/txt_fruit_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:text="1. 芒果   1.5kg 10元"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/txt_fruit_list2"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:text="2. 苹果   1.5kg 10元"
+                        android:textSize="26sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:paddingBottom="30dp"
+                    android:paddingRight="60dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_clear"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:text="清空"
+                        android:background="#fdfcea"
+
+                        android:textSize="28sp"
+                        android:textColor="#3e3d3b"
+                        android:layout_gravity="right"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/txt_fruit_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3 kg"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    android:textColor="#3e3d3b"
+                    android:background="@drawable/home_input_box"
+                    android:layout_margin="20dp" />
+
+                <TextView
+                    android:id="@+id/txt_allFruit_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="20 元"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    android:textColor="#3e3d3b"
+                    android:background="@drawable/home_input_box"
+                    android:layout_margin="20dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
